@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Table tags
+		</title>
+	</head>
+	<body>
+		<p>This is a table</p>
+		<table>
+			<caption>A table with styles and shit</caption>
+			<style>
+				table {
+					width: 70%
+				}
+				table, th, td{
+					border: 1px solid green;
+					border-collapse: collapse;
+				}
+				th, td{
+					padding: 5px;
+				}
+			</style>
+			<tr>
+				<th>header</th>
+				<th>header 2</th>
+				<th>another header</th>
+			</tr>
+			<tr>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr>
+				<td>another data</td>
+				<td>another data</td>
+				<td>thats a lot of data</td>
+			</tr>
+			<tr>
+				<td>BURY THE</td>
+				<td>LIGHT</td>
+				<td>DEEP WITHIN</td>
+			</tr>
+		</table>
+		<hr>
+		<table>
+			<caption>Col span</caption>
+			<tr>
+			<th>Header</th>
+			<th colspan="3">Numbers</th>
+			</tr>
+			<tr>
+			<td>Test</td>
+			<td>7503520801</td>
+			<td>9555879135</td>
+			<td>1283012390</td>
+			<td>12312893123</td>
+			<p>note how the last value isnt in numbers since colspan is only 3</p>
+			</tr>
+		</table>
+		<hr>
+		<table>
+			<caption>Row Span</caption>
+			<tr><th>Test</th><td>Test</td></tr>
+			<tr><th rowspan="2">Numbers</th><td>213123123</td></tr>
+			<tr><td>21y381273</td></tr>
+			<tr><td>1231231 note how this isnt under numbers anymore</td><td>that is because rowspan for numbers is only 2</td></tr>
+		</table>
+		<hr>
+		<table>
+			<caption>A table with tbody that is aligned to the right</caption>
+			<tr>
+				<th>header</th>
+				<th>header 2</th>
+				<th>another header</th>
+			</tr>
+			<tbody align = "right">
+			<tr>
+				<td>data</td>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr>
+				<td>another data</td>
+				<td>another data</td>
+				<td>thats a lot of data</td>
+			</tr>
+			<tr>
+				<td>BURY THE</td>
+				<td>LIGHT</td>
+				<td>DEEP WITHIN</td>
+			</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+
+<!--
+	Table tag
+	used to display data in tabular form (row * column)
+
+	<table> - defines the table
+	<caption> - table caption
+	<tr> - table row
+	<td> - table data
+	<th> - table header
+
+	<colgroup> - sepcifies a group of one or more columns
+	<col> - used with colgroup to specify column properties in each column
+
+	<tbody> group the body content in a table
+	<thead> group header content in a table'
+	<tfooter> group footer content in a table
+
+	It is recommended to use div tag over table to manage layout of page
+
+	You can border the table by using border attribute or border property in CSS (recommended)
+	Border-collapse collapse all the border into one border (does not look like boxes in a large box)
+
+	You can specify padding by using padding property in CS
+	Padding adds spaces in the table
+
+	You can specify table width using CSS width property
+	if specified in percentage, the width changes as your screen size changes
+	if specified in px, the width does not change as your screen size change
+
+	You can make a cell span more than one column with colspan attribute
+	It will divide one cell into multiple columns
+	number of columns depend on value of colspan
+	You can do the similar thing with row using rowspan attribute
+
+
+	tbody tag
+
+		<tbody> ... </tbody>
+		Used to group the tables row together
+		provide semantic information
+
+		attributes for tbody
+		ALL ARE NOT SUPPORTED IN HTML5 IDK WHY
+
+		align
+		- right, left, center, justify, char
+		determines the alignment of the conent inside tbody
+
+		char
+		- character
+		specifies alignment of tbody content to the character
+
+		char off
+		- (NUMBER)
+		specifies number of characters the conent will be aligned from the character specified by char attribute
+
+		valign
+		- top middle bottom baseline
+		determine vertical alignment
+
+		p.s. only align works, the rest doesnt
+
+	td tag
+
+		<td> ... </td>
+		specify cells in table
+		contains the data of the table
+
+		Attributes
+		width: fix the width of a particular comlumn
+		fix the width of a column with <col = style = "width: percent">
+
+		rowspan = determine the number of rows a cell should span
+		colspan = determine the number of columns a cell should span
+		headers="header_id" = determins one or more header cells which a cell is related
+		rest are not supported in HTML 5
+-->

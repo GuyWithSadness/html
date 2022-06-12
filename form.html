@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form</title>
+	</head>
+	<body>
+		<form action = "i would put the server url here but i cant so." method = "get">
+		<fieldset>
+			<legend>Name:</legend>
+			<label for="firstname">First Name: </label> <br/>
+					  <input type="text" id="firstname" name="firstname" title = "put your name here!"/> <br/>
+		   <label for="lastname">Last Name: </label>
+					  <input type="text" id="lastname" name="lastname"/> <br/>
+		</fieldset>
+		<fieldset>
+			<legend>Age:</legend>
+			<span>Select Age group:</span><br/>
+			<label for = "10 - 12"> 10 - 12 </label>
+			<input type = "radio" name = "Age" value = "10 - 12" id = "10 - 12"><br>
+			<label for = "13 - 18"> 13 - 18 </label>
+			<input type = "radio" name = "Age" value = "13 - 18" id = "13 - 18"><br>
+			<label for = "20 - 28"> 20 - 28 </label>
+			<input type = "radio" name = "Age" value = "20 - 28" id = "20 - 28"><br>
+			<label for = "> 29"> > 29 </label>
+			<input type = "radio" name = "Age" value = "> 29" id = "> 29"><br>
+		</fieldset>
+		<fieldset>
+			<legend>A random checkbox</legend>
+			<input type = "checkbox" id = "a" value = "a" name = "alpha"> a <br/>
+			<input type = "checkbox" id = "b" value = "b" name = "alpha"> b <br/>
+			<input type = "checkbox" id = "c" value = "c" name = "alpha"> c <br/>
+			<input type = "checkbox" id = "d" value = "d" name = "alpha"> d <br/>
+		</fieldset>
+		<fieldset>
+			<legend>Spam here</legend>
+			<textarea rows  = "3" cols = "50" name = "Spam"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>A selection box or something</legend>
+			<select name = "numbers" id = "numbers">
+				<optgroup label = "idk">
+					<option value = "one">1</option>
+					<option value = "two">2</option>
+					<option value = "three">3</option>
+					<option value = "four">4</option>
+					<option vlaue = "five">5</option>
+				</optgroup>
+				<optgroup label = "idk2">
+					<option value = "oneone">11</option>
+					<option value = "onetwo">12</option>
+					<option value = "onethree">13</option>
+					<option value = "onefour">14</option>
+					<option vlaue = "onefive">15</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<span>Press me what you are done<span><br>
+		<input type = "submit" value = "submit">
+		</form>
+	</body>
+</html>
+
+<!--
+	Form
+	Section of a document which contains controls such as text fields,
+	password fields, checkboxes, radiobuttons, submit buttons, menus
+
+	Facilates the user to enter data that is to be sent to the server
+
+	Syntax:
+
+	<form action = "server url" method = "get|post">
+		//input control e.g. textfield, textarea, radiobutton, button
+	</form>
+
+	Form tags
+	form - defines an HTML form to enter inputs
+	input - defines an input control
+
+	textarea - multiline input control
+	select - drop-down list
+		optgroup - defines a group of related options in a drop-down list
+		- seperates the elements into their own groups in the drop down list
+						optgroup1 (in bold)
+						option1
+						option2
+						option3
+						optgroup2 (in bold)
+						option1
+						option2
+						option3
+		option - options for a drop down list
+
+	label - label for an input element
+	fieldset - groups the related elements in a form
+
+	button - clickable button
+
+	datalist - specifies a list of predefined options for input control.
+	keygen - defines a key-pair generator field for forms (generate public key and private key)
+	output - defines the result of a calculation
+
+
+	<input> element
+	used to create form fields to take input from user
+
+	TextField Control type = "text"
+	- enable user to type a small amout of text
+	- text field fires an action event when the user indicates the text entry is complete
+	- basically, the input area
+
+	First Name: <input type = "text" name = "firstname"/><br/>
+	- this creates a textfield for the input "firstname" (i think im not too sure)
+	if name is ommited, the text filed input will not be submitted to server
+
+	</textarea> tag
+	Used to insert multiple multi-line texts in a form
+	the size can be specified using rows or cols (or just use CSS)
+	<form>
+		<textarea rows = "2" cols = "30"></textarea>
+	</form>
+
+	</label> tag
+	when you click on the lable tag, it will focus on the textfield control
+	the "for" attribute in label tag must the the same as the "id" attribute of input tag
+
+	input type = "password"
+	password is not visible to the user in password field control
+
+	input type = "email"
+	you must have @ and . as input in this field
+
+	Radio button control <input type = "radio" id = "" name = "" value = "">
+	Select one option from multiple options
+
+	Checkbox control <input type = "checkbox" id = "" name = "" value = "">
+	Same with radio but can select multiple option
+
+	Submit button <input type = "submit" value = "submit">
+	the value attribute can be anything which we write on the button
+
+	</fieldset> element
+	group related information of a form
+	used with </legend> - provide caption for group elements
+	<fieldset>
+		<legend> ... </legend>
+		<label for = "name"> ....
+	</fieldset>
+-->
